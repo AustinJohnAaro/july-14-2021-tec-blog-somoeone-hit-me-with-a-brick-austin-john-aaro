@@ -26,7 +26,6 @@
         "watch": "nodemon server.js",
         "seed": "node seeds/index.js"
     },
-    
     "repository": {
         "type": "git",
         "url": "git+https://github.com/AustinJohnAaro/AustinJohnAaro/july-14-2021-tec-blog-someone-hit-me-with-a-brick-austin-john-aaro.git"
@@ -37,9 +36,4 @@
         "url": "https://github.com/AustinJohnAaro/AustinJohnAaro/july-14-2021-tec-blog-someone-hit-me-with-a-brick-austin-john-aaro/issues"
     },
     "homepage": "https://github.com/AustinJohnAaro/july-14-2021-tec-blog-someone-hit-me-with-a-brick-austin-john-aaro#readme"
-
-
-    },
-    "presets": ["@babel/preset-env", "minify"],
-    "plugins": []
-} 
+}
