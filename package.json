@@ -1,0 +1,38 @@
+{
+    "name": "AustinJohnAaro/july-14-2021-tec-blog-someone-hit-me-with-a-brick-austin-john-aaro",
+    "version": "1.0.0",
+    "engine": {
+        "node": "12.11.1"
+    },
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "connect-session-sequelize": "^7.1.1",
+        "dotenv": "^8.6.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^5.3.2",
+        "express-session": "^1.17.1",
+        "mysql2": "^2.2.5",
+        "node": "^16.5.0",
+        "schema": "^0.2.1",
+        "sequelize": "^6.6.5",
+        "sql": "^0.78.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "watch": "nodemon server.js",
+        "seed": "node seeds/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AustinJohnAaro/AustinJohnAaro/july-14-2021-tec-blog-someone-hit-me-with-a-brick-austin-john-aaro.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AustinJohnAaro/AustinJohnAaro/july-14-2021-tec-blog-someone-hit-me-with-a-brick-austin-john-aaro/issues"
+    },
+    "homepage": "https://github.com/AustinJohnAaro/july-14-2021-tec-blog-someone-hit-me-with-a-brick-austin-john-aaro#readme"
+}
