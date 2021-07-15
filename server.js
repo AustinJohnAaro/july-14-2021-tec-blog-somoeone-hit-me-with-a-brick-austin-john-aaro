@@ -1,4 +1,4 @@
-
+let path = require('path');
 let express = require('express');
 let session = require('express-session');
 let exphbs = require('express-handlebars');
