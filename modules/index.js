@@ -1,3 +1,17 @@
+
+var sq = new Sequelize(dbname, user, password, config);
+
+db = {
+    Sequelize: Sequelize,
+    sequelize: sq,
+    Post: sq.import(__dirname + '/Post.js'),
+    User: sq.import(__dirname + '/User.js')
+}
+module.exports = db; 
+
+
+
+
 // let User = require('./User');
 // let Post = require('./Post');
 // let Comment = require('./Comment');

@@ -1,41 +1,63 @@
+import app from 'server.js'
+export default class A{} 
+
+
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 
-const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
-const app = express();
-const PORT = process.env.PORT || 3001;
+
+
+
 
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-const sess = {
-  secret: 'Super secret secret',
-  cookie: {},
-  resave: false,
-  saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize
-  })
-};
 
-app.use(session(sess));
+
+
 
 const helpers = require('./utils/helpers');
 
 const hbs = exphbs.create({ helpers });
 
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(require('./controllers/'));
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
-}); 
+
+
+module.exports = function(sequelize, DataTypes) {                                                    
+  return sequelize.define('User', {                                                             
+      username: DataTypes.STRING,                                                                  
+  },{                                                                                              
+      classMethods: {                                                                              
+          doSomething: function(successcb, errcb, request) {}                                             
+     },                                                                                           
+     instanceMethods: {                                                                           
+         someThingElse: function(successcb, errcb, request) {}                                              
+
+     }                                                                                            
+   });                                                                                              
+ }; 
+
+
+console.log('this will sync your table to your database')
+console.log('and the console should read out Executing (default): CREATE TABLE IF NOT EXISTS "TABLE NAME"....')
+
+const app = express();
+const PORT = process.env.PORT || 3001; 
+
+  
+
+app.listen(PORT, () => console.log('Now listening'));
+
+  
+
+
