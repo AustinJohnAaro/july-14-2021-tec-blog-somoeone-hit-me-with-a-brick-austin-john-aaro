@@ -5,7 +5,7 @@
         "node": "v15.12.0"
     },
     "description": "",
-    "main": "server.js",
+    "main": "your-server.js",
     "dependencies": {
         "bcrypt": "^5.0.1",
         "connect-session-sequelize": "^7.1.1",
@@ -24,7 +24,6 @@
         "sql": "^0.78.0"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node your-server.js",
         "watch": "nodemon server.js",
         "seed": "node seeds/index.js"
