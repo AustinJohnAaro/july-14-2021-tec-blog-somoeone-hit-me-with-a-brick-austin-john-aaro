@@ -1,6 +1,6 @@
 {
     "name": "i-am-praying-this-is-the-last",
-    "version": "1.0.0",
+    "version": "7.19.0",
     "engine": {
         "node": "12.11.1"
     },
@@ -16,6 +16,7 @@
         "handlebars": "^4.7.7",
         "mysql2": "^2.2.5",
         "node": "^16.5.0",
+        "node.js": "^0.0.1-security",
         "pg": "^8.6.0",
         "schema": "^0.2.1",
         "sequelize": "^6.6.5",
