@@ -1,5 +1,5 @@
 {
-    "name": "AustinJohnAaro/july-14-2021-tec-blog-someone-hit-me-with-a-brick-austin-john-aaro",
+    "name": "i-am-praying-this-is-the-last",
     "version": "1.0.0",
     "engine": {
         "node": "12.11.1"
@@ -16,6 +16,7 @@
         "handlebars": "^4.7.7",
         "mysql2": "^2.2.5",
         "node": "^16.5.0",
+        "pg": "^8.6.0",
         "schema": "^0.2.1",
         "sequelize": "^6.6.5",
         "sequelize-cli": "^6.2.0",
