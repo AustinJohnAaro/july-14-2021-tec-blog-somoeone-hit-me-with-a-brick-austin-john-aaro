@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Blog </title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yikes</title>
+</div>
+<a href="i_Have_Nothing_To_lose_index.html" class="btn">Start</a>
+</div>
 </head>
-
 <body>
-  <div class="wrapper">
-    <header class="hero">
-      <div>
-        <nav class="nav">
-          <a class="link" href="/">Main</a>
-          <a class="link" href="/dashboard">Dashboard</a>
-          {{#if loggedIn}}
-          <a class="link" href="/" id="logout">Logout</a>
-          {{else}}
-          <a class="link" href="/login">Login</a>
-          {{/if}}
-        </nav>
-      </div>
+  <div class="container">
 
-      <h1 class="app-title"><i class="fab "></i>The Tech Blog(Fuck you)</h1>
-    </header>
+    <div id="startpage">
+        <form>
+        <fieldset>
+            <h1>Will I Pass this class?</h1>
+    
+            <input type="radio" id="yes" name="yes" value="yes">
+            <label for="yes">yes</label><br>
 
-    <main>
-      {{{ body }}}
-    </main>
-  </div>
+            <input type="radio" id="no" name="no" value="no">
+            <label for="no">no</label><br>
+        </fieldset>
 
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
+        <fieldset>
+            <h1>Am I going to pass this project ?</h1>
+    
+        <input type="radio" id="yes" name="yes" value="yes">
+            <label for="yes">yes</label><br>
+        <input type="radio" id="no" name="no" value="no">
+            <label for="no">no</label><br>
+        </fieldset>
 
+        <button id="submitbtn" type="submit">Click Me!</button>
+          </form>
+    </div>
+<script src="server.js" ></script>
 </body>
+</html>
 
-</html> 
+
+ 
+
