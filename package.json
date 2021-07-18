@@ -7,21 +7,7 @@
     "description": "",
     "main": "your-server.js",
     "dependencies": {
-        "bcrypt": "^5.0.1",
-        "connect-session-sequelize": "^7.1.1",
-        "dotenv": "^10.0.0",
-        "express": "^4.17.1",
-        "express-handlebars": "^5.3.2",
-        "express-session": "^1.17.2",
-        "handlebars": "^4.7.7",
-        "mysql2": "^2.2.5",
-        "node": "^16.5.0",
-        "node.js": "^0.0.1-security",
-        "pg": "^8.6.0",
-        "schema": "^0.2.1",
-        "sequelize": "^6.6.5",
-        "sequelize-cli": "^6.2.0",
-        "sql": "^0.78.0"
+        
     },
     "scripts": {
         "start": "node your-server.js",
