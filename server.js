@@ -9,7 +9,7 @@ const exphbs = require('express-handlebars');
 
 const { debug } = require('console');
 const http = require('http');
-const app = require('app.js');
+const app = require('.app.js');
 
 const normalizePort = val => {
     var port = parseInt(val, 10);
@@ -52,7 +52,7 @@ const onListening = () => {
     debug("Listening on " + bind);
 };
 
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT || "8080");
 app.set("port", port);
 
 const server = http.createServer(app);
@@ -103,9 +103,9 @@ console.log('this will sync your table to your database')
 console.log('and the console should read out Executing (default): CREATE TABLE IF NOT EXISTS "TABLE NAME"....')
 
 const app = express();
-const PORT = process.env.PORT || 3001; 
+const PORT = process.env.PORT || 8080; 
 
-app.listen(process.env.PORT || 3001, function(){
+app.listen(process.env.PORT || 8080, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 }); 
 
